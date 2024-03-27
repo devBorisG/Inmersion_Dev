@@ -1,0 +1,187 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8F0FE;
+    color: #333;
+}
+
+/* Estilo de los títulos */
+h1 {
+    width: 100%;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3.75rem;
+}
+
+/* Estilo de los párrafos */
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilo de los contenedores */
+.seccion {
+    margin: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+
+}
+
+.botones>button {
+    margin: 1rem 1rem;
+    width: 13rem;
+    padding: 1.8rem;
+}
+
+#divMoneda,
+#divTemperatura {
+    display: none;
+    
+}
+
+.seccion>* {
+    margin-bottom: 0.9375rem;
+}
+
+.padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.resultado {
+    padding-top: 0.625rem;
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de los botones */
+button {
+    display: flex;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 1.4rem;
+    width: 6.90rem;
+    height: 0.625rem;
+    grid-column: span 2;
+    font-size: 1.125rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de los formularios */
+form {
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: auto;
+}
+
+select {
+    padding: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 15px;
+    background-color: #f2f2f2;
+}
+
+input {
+    padding: 0.625rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 15px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilo de las etiquetas de los formularios */
+/* Oculta las flechas de incremento y decremento en Chrome, Safari y Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    outline: none;
+    /* Eliminar el focus */
+}
+
+/* Oculta las flechas de incremento y decremento en Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    outline: none;
+    /* Eliminar el focus */
+}
+
+@media screen and (max-width: 400px) {
+
+    /* Estilo de los contenedores en dispositivos móviles */
+    .seccion {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    /* Estilo de los botones en dispositivos móviles */
+    button {
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 1.3rem;
+    }
+
+    /* Estilo de los formularios en dispositivos móviles */
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    /* Estilo de las etiquetas de los formularios en dispositivos móviles */
+    label {
+        font-size: medium;
+    }
+}
