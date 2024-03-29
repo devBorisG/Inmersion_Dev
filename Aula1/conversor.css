@@ -54,7 +54,7 @@ p {
 #divMoneda,
 #divTemperatura {
     display: none;
-    
+
 }
 
 .seccion>* {
@@ -112,7 +112,8 @@ form {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    width: auto;
+    gap: 1rem;
+
 }
 
 select {

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
+    <meta content="text/html" charset="UTF-8">
     <title>Conversor de Moneda</title>
     <link rel="stylesheet" type="text/css" href="conversor.css">
 </head>
@@ -23,17 +23,18 @@
                     <label for="moneda">Moneda Base</label>
                     <select id="moneda">
                     </select>
-                    <input type="number" id="cantidad" placeholder="Cantidad Base">
+                    <label for="cantidadMoneda"></label>
+                    <input type="number" id="cantidadMoneda" placeholder="Cantidad Base">
                 </div>
                 <!-- Campos de entrada para la moneda a convertir-->
                 <div class="seccion">
-                    <label for="monedaConvertir">Moneda a Convertir</label>
+                    <label for="monedaDestino">Moneda a Convertir</label>
                     <select id="monedaDestino">
                     </select>
                     <div id="resultado" class="resultado"></div>
                 </div>
 
-                <button type="button" onclick="convertir()">Convertir</button>
+                <button type="submit">Convertir</button>
 
             </form>
         </div>
@@ -53,11 +54,12 @@
                         <option value="Kelvin">Kelvin</option>
                         <option value="Fahrenheit">Fahrenheit</option>
                     </select>
-                    <input type="number" id="cantidad" placeholder="Cantidad Base">
+                    <label for="cantidadTem"></label>
+                    <input type="number" id="cantidadTem" placeholder="Cantidad Base">
                 </div>
                 <!-- Campos de entrada para la moneda a convertir-->
                 <div class="seccion">
-                    <label for="temperaturaConvertir">Temperatura a Convertir</label>
+                    <label for="temperaturaDestino">Temperatura a Convertir</label>
                     <select id="temperaturaDestino">
                         <option value="Celsius">Celsius</option>
                         <option value="Kelvin">Kelvin</option>
@@ -66,7 +68,7 @@
                     <div id="resultadoTemp" class="resultado"></div>
                 </div>
 
-                <button type="button" onclick="convertirTemperatura()">Convertir</button>
+                <button type="submit">Convertir</button>
 
             </form>
         </div>
