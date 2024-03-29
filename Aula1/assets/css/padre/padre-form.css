@@ -1,0 +1,17 @@
+/* Estilo de los formularios */
+.padre__form {
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 400px){
+    .padre__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+}

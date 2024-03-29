@@ -1,0 +1,28 @@
+.padre__form-button--activo{
+    display: flex;
+    background-color: var(--background-color-button);
+    color: var(--color-font-button);
+    border: none;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 1.4rem;
+    width: 6.90rem;
+    height: 0.625rem;
+    grid-column: span 2;
+    font-size: 1.125rem;
+}
+
+.padre__form-button--activo:hover{
+    background-color: var(--background-color-button-hover);
+}
+
+@media screen and (max-width: 400px){
+    .padre__form-button--activo{
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 1.3rem;
+    }
+}

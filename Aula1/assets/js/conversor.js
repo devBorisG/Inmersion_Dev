@@ -36,7 +36,7 @@ async function convertCurrency() {
         const data = await fetch(apiURL).then(res => res.json());
         const rate = data.rates[targetCurrency];
         const result = (amount * rate).toFixed(2);
-        document.getElementById('resultado').innerHTML = `The result is: ${result} ${targetCurrency}`;
+        document.getElementById('resultado').innerHTML = `El resultado es: ${result} ${targetCurrency}`;
     } catch (error) {
         console.error('Error:', error);
         alert('Error converting currency');
@@ -67,7 +67,7 @@ function convertTemperature() {
         }
     };
     const result = baseTemp === targetTemp ? parseFloat(amount) : conversions[baseTemp][targetTemp](parseFloat(amount));
-    document.getElementById('resultadoTemp').innerHTML = `The result is: ${result.toFixed(2)} ${targetTemp}`;
+    document.getElementById('resultadoTemp').innerHTML = `El resultado es: ${result.toFixed(2)} ${targetTemp}`;
 }
 
 // Fetches the latest exchange rates and populates the currency select elements.

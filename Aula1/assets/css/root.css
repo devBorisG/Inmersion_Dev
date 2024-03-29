@@ -1,0 +1,82 @@
+:root{
+    --font-page: Arial, sans-serif;
+    --background-color-page: #E8F0FE;
+    --color-font-page: #333;
+    --background-color-div: #fff;
+    --background-color-button: #007bff;
+    --background-color-button-hover: #0056b3;
+    --color-font-button: #fff;
+    --color-border-select: #ccc;
+    --background-color-select: #f2f2f2;
+    --color-border-input: #ccc;
+}
+
+/* Estilo de los párrafos */
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilo de los títulos */
+h1 {
+    width: 100%;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3.75rem;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: var(--font-page);
+    background-color: var(--background-color-page);
+    color: var(--color-font-page);
+}
+
+/* Estilo de las etiquetas de los formularios */
+/* Oculta las flechas de incremento y decremento en Chrome, Safari y Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    outline: none;
+    /* Eliminar el focus */
+}
+
+/* Oculta las flechas de incremento y decremento en Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    outline: none;
+    /* Eliminar el focus */
+}
+
+select {
+    padding: 0.625rem;
+    border: 1px solid var(--color-border-select);
+    border-radius: 4px;
+    width: 100%;
+    font-size: 15px;
+    background-color: var(--background-color-select);
+}
+
+input {
+    padding: 0.625rem;
+    border: 1px solid var(--color-border-input);
+    border-radius: 4px;
+    width: 90%;
+    font-size: 15px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 400px){
+    label{
+        font-size: medium;
+    }
+}

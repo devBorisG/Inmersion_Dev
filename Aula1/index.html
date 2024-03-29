@@ -4,22 +4,30 @@
 <head>
     <meta content="text/html" charset="UTF-8">
     <title>Conversor de Moneda</title>
-    <link rel="stylesheet" type="text/css" href="conversor.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/root.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/conversores.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/padre/padre.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/padre/padre-form.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/padre/padre-form-seccion.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/padre/padre-form-seccion-resultado.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/padre/padre-form-button.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/botones/botones.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/botones/botones-cambio.css">
 </head>
 
 <body>
-    <div class="botones">
-        <button type="button" id="botonMoneda">Conversor de monedas</button>
-        <button type="button" id="botonTem">Conversor de temperatura</button>
-    </div>
-    <div class="divMoneda" id="divMoneda">
+    <section class="botones">
+        <button type="button" class="botones__cambio--activo" id="botonMoneda">Conversor de monedas</button>
+        <button type="button" class="botones__cambio--activo" id="botonTem">Conversor de temperatura</button>
+    </section>
+    <section class="conversores" id="divMoneda">
         <div>
             <h1>Conversor de Moneda</h1>
         </div>
         <div class="padre">
-            <form id="conversorForm">
+            <form class="padre__form" id="conversorForm">
                 <!-- Campos de entrada para la cantidad y la moneda base-->
-                <div class="seccion">
+                <div class="padre__form-seccion">
                     <label for="moneda">Moneda Base</label>
                     <select id="moneda">
                     </select>
@@ -27,27 +35,27 @@
                     <input type="number" id="cantidadMoneda" placeholder="Cantidad Base">
                 </div>
                 <!-- Campos de entrada para la moneda a convertir-->
-                <div class="seccion">
+                <div class="padre__form-seccion">
                     <label for="monedaDestino">Moneda a Convertir</label>
                     <select id="monedaDestino">
                     </select>
-                    <div id="resultado" class="resultado"></div>
+                    <div id="resultado" class="padre__form-seccion-resultado"></div>
                 </div>
 
-                <button type="submit">Convertir</button>
+                <button type="submit" class="padre__form-button--activo">Convertir</button>
 
             </form>
         </div>
-    </div>
+    </section>
 
-    <div class="divTemperatura" id="divTemperatura">
+    <div class="conversores" id="divTemperatura">
         <div>
             <h1>Conversor de Temperatura</h1>
         </div>
         <div class="padre">
-            <form id="conversorTemperatureForm">
+            <form class="padre__form" id="conversorTemperatureForm">
                 <!-- Campos de entrada para la cantidad y la moneda base-->
-                <div class="seccion">
+                <div class="padre__form-seccion">
                     <label for="temperatura">Temperatura Base</label>
                     <select id="temperatura">
                         <option value="Celsius">Celsius</option>
@@ -58,23 +66,23 @@
                     <input type="number" id="cantidadTem" placeholder="Cantidad Base">
                 </div>
                 <!-- Campos de entrada para la moneda a convertir-->
-                <div class="seccion">
+                <div class="padre__form-seccion">
                     <label for="temperaturaDestino">Temperatura a Convertir</label>
                     <select id="temperaturaDestino">
                         <option value="Celsius">Celsius</option>
                         <option value="Kelvin">Kelvin</option>
                         <option value="Fahrenheit">Fahrenheit</option>
                     </select>
-                    <div id="resultadoTemp" class="resultado"></div>
+                    <div id="resultadoTemp" class="padre__form-seccion-resultado"></div>
                 </div>
 
-                <button type="submit">Convertir</button>
+                <button type="submit" class="padre__form-button--activo">Convertir</button>
 
             </form>
         </div>
     </div>
 
-    <script src="conversor.js"></script>
+    <script src="assets/js/conversor.js"></script>
 </body>
 
 </html>

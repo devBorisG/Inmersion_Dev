@@ -1,0 +1,21 @@
+/* Estilo de los contenedores */
+.padre__form-seccion {
+    margin: 20px;
+    padding: 30px;
+    background-color: var(--background-color-div);
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.padre__form-seccion>* {
+    margin-bottom: 0.9375rem;
+}
+
+@media screen and (max-width: 400px) {
+    .padre__form-seccion {
+        margin: 10px;
+        padding: 20px;
+    }
+}

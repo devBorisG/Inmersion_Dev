@@ -1,0 +1,12 @@
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.botones>button {
+    margin: 1rem 1rem;
+    width: 13rem;
+    padding: 1.8rem;
+}
