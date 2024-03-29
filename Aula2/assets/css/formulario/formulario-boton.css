@@ -1,0 +1,15 @@
+.formulario__boton {
+    background: var(--color-tertiary);
+    border-radius: 4px;
+    border: none; /* Elimina el borde */
+    outline: none; /* Elimina el resaltado al seleccionar el elemento */
+    padding: 10px; /* Añade un poco de padding */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    color: var(--color-font-secondary); /* Cambia el color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+    font-family: var(--font-family); /* Cambia la fuente del botón */
+}
+
+.formulario__boton--activo:hover {
+    background: var(--color-quinary);
+}

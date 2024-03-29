@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <title>Mentalista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/root.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/tituloPagina.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/formulario/formulario.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/formulario/formulario-encabezado.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/formulario/formulario-seleccion.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/formulario/formulario-boton.css">
+</head>
+<body>
+        <h1 class="tituloPagina">El Mentalista</h1>
+        <form id="mentalistaForm" class="formulario">
+            <label for="complejidad" class="formulario__encabezado">Seleccione el nivel de complejidad</label>
+            <select id="complejidad" class="formulario__seleccion">
+                <option value="opcion" disabled>Seleccione una opcion</option>
+                <option value="facil">Facil</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="dificil">Dificil</option>
+            </select>
+            <button type="submit" class="formulario__boton formulario__boton--activo">Comenzar</button>
+        </form>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

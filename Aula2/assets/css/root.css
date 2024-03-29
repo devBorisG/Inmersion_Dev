@@ -1,0 +1,21 @@
+:root{
+    --font-family: 'Aldrich', Arial, sans-serif;
+    --color-font: #333;
+    --color-font-secondary: #f3f3f3;
+    --color-primary: #d3ecf7;
+    --color-secondary: #1d87a4;
+    --color-tertiary: #8560c2;
+    --color-quaternary: #f3f3f3;
+    --color-quinary: #6d4f9d;
+
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--color-primary);
+    color: var(--color-font);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}

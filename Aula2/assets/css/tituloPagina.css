@@ -1,0 +1,7 @@
+.tituloPagina {
+    font-size: 3rem;
+    color: var(--color-font);
+    text-align: center;
+    margin: 0;
+    padding: 3rem;
+}
